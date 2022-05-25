@@ -107,6 +107,10 @@
          <a class="page-link"
             data-page="{{ question_list.next_page_number }}" href="#">다음</a>
      </li>
+     {% else %}
+     <li class="page-item disabled">
+         <a class="page-link" tabindex="-1" aria-disabled="true" href="#">다음</a>
+     </li>
      {% endif %}
     </ul>
     <!-- 페이징 처리 끝 -->
