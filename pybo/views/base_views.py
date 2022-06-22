@@ -6,7 +6,6 @@ from ..models import Question, Answer, Category
 
 def index(request, category_name='qna'):
     ''''''
-
     ''''''
     # 입력 인자
     page = request.GET.get('page', '1')     # 페이지
